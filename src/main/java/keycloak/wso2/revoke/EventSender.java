@@ -54,6 +54,13 @@ public class EventSender {
 
         @Override
         public void run() {
+            /**
+             * ! NOTE: the Keycloak HTTPClientBuilder is configured with Disabled Trust
+             * ! Manager. Which in result disables the SSL communication
+             * 
+             * * Enable and configure the Trust Manager to perform SSL communication with the
+             * * API Manager
+             */
             try (CloseableHttpClient closeableHttpClient = new org.keycloak.connections.httpclient.HttpClientBuilder()
                     .disableTrustManager().build()) {
 
