@@ -25,9 +25,9 @@ public class EventSender {
     private static final Logger LOG = Logger.getLogger(EventSender.class);
 
     public void publishEvent(TokenRevocationEvent tRevocationEvent) {
-        String notificationEndpoint = System.getProperty("wso2.apim.notfication.ep");
-        String username = System.getProperty("wso2.apim.notfication.username");
-        String password = System.getProperty("wso2.apim.notfication.password");
+        String notificationEndpoint = System.getProperty("wso2.apim.notification.ep");
+        String username = System.getProperty("wso2.apim.notification.username");
+        String password = System.getProperty("wso2.apim.notification.password");
 
         // the default configurations
         // notificationEndpoint = https://tm-hostname:9443/internal/data/v1/notify
