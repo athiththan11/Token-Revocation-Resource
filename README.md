@@ -5,6 +5,8 @@
 This repo contains a sample Keycloak `ResourceProvider` implementation to revoke the Token Caches in WSO2 API Manager (Gateway) servers when using Keycloak as the Key Manager with the WSO2 API Manager `v3.2.0`.
 
 > Instructions on configuring Keycloak as a Key Manager with the WSO2 API Manager v3.2.0 can be found under [Configure Keycloak Connector](https://apim.docs.wso2.com/en/latest/administer/key-managers/configure-keycloak-connector/)
+>
+> **Note**: The implementation is made for Keycloak `v11.x.x` versions
 
 The implementation introduces a new endpoint named `revoke-token` in each configured realm of the Keycloak server to verify the JWT token's validity and to send `Token Revocation Notifications` to the WSO2 API Manager server.
 
