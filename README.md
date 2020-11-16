@@ -8,6 +8,8 @@ This repo contains a sample Keycloak `ResourceProvider` implementation to revoke
 
 The implementation introduces a new endpoint named `revoke-token` in each configured realm of the Keycloak server to verify the JWT token's validity and to send `Token Revocation Notifications` to the WSO2 API Manager server.
 
+![Token Revocation Flow -- Keycloak](docs/images/token-revocation-flow--keycloak.svg)
+
 ## Build & Deploy
 
 ### Build
